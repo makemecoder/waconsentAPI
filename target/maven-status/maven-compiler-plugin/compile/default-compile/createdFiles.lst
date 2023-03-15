@@ -1,0 +1,9 @@
+com\hdfc\waconsentAPI\util\CommonUtility.class
+com\hdfc\waconsentAPI\controller\ConsentController.class
+com\hdfc\waconsentAPI\dvo\ConsentCheckApiResponse.class
+com\hdfc\waconsentAPI\dvo\ConsentDVO.class
+com\hdfc\waconsentAPI\dvo\ConsentRequestDetails.class
+com\hdfc\waconsentAPI\entity\Consent.class
+com\hdfc\waconsentAPI\repository\ConsentRepository.class
+com\hdfc\waconsentAPI\WaconsentApiApplication.class
+com\hdfc\waconsentAPI\util\Constants.class
