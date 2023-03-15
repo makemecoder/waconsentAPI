@@ -1,0 +1,23 @@
+name: Build a Docker image and Push it to ACR
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: azure/docker-login@v1
+        with:
+           login-server: registryyash1289.azurecr.io
+           username: RegistryYash1289
+           password: ARESz+yrBSTmbg6NJ9DigF1uZZVcKMijXRuV0MxfsE+ACRAfMYAZ
+      - run: |
+          docker build . -t registryyash1289.azurecr.io/knowledgefactory:${{ github.sha }}
+          docker push registryyash1289.azurecr.io/knowledgefactory:${{ github.sha }}
