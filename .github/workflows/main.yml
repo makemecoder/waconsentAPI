@@ -19,5 +19,5 @@ jobs:
            username: RegistryYash1289
            password: ARESz+yrBSTmbg6NJ9DigF1uZZVcKMijXRuV0MxfsE+ACRAfMYAZ
       - run: |
-          docker build . -t registryyash1289.azurecr.io/knowledgefactory:${{ github.sha }}
-          docker push registryyash1289.azurecr.io/knowledgefactory:${{ github.sha }}
+          docker build . -t registryyash1289.azurecr.io/AzureTraining:${{ github.sha }}
+          docker push registryyash1289.azurecr.io/AzureTraining:${{ github.sha }}
