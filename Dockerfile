@@ -1,7 +1,7 @@
 # Build stage
 FROM maven:3.6.3-jdk-8-slim AS build
 RUN mvn clean package
-ARG JAR=target/*.jar
+ARG JAR_FILE=target/*.jar
 
 # Run Stage
 FROM openjdk:8-jdk-alpine
