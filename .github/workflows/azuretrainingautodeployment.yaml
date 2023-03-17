@@ -12,6 +12,7 @@ env:
     CONTAINER_NAME: waconsentapiamg
     DEPLOYMENT_MANIFEST_PATH: |
         ./Dockerfile
+        ./deployment.yml
         ./service.yml
 jobs:
     buildImage:
@@ -60,6 +61,6 @@ jobs:
               name: Deploys application
               with:
                 action: deploy
-                images: ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.CONTAINER_NAME }}:${{ github.sha }}
+                images: ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.CONTAINER_NAME }}:waconsentapi_v1
                 manifests: ${{ env.DEPLOYMENT_MANIFEST_PATH }}
                 namespace: default
