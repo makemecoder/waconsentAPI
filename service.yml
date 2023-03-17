@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: consentapidemo1
+  name: consentapidemo2
   namespace: default
 spec:
   ports:
@@ -9,10 +9,7 @@ spec:
       port: 80
       targetPort: 8080
   selector:
-    app: consentapidemo1
-  clusterIP: 10.0.203.245
-  clusterIPs:
-    - 10.0.203.245
+    app: consentapidemo2
   type: LoadBalancer
   sessionAffinity: None
   externalTrafficPolicy: Cluster
