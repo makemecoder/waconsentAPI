@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: consentapidemo2
-        image: registryyash1289.azurecr.io/waconsentapiamg:b4763947577672e8fd75e5cf8cd5434bf2f996e2
+        image: registryyash1289.azurecr.io/waconsentapiamg:waconsentapi_v1
         ports:
         - containerPort: 80
