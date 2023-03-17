@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: consentapidemo2-service
+  name: consentapidemo2
   namespace: default
 spec:
   ports:
