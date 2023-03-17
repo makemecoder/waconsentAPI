@@ -12,8 +12,7 @@ env:
     CONTAINER_NAME: waconsentapiamg
     DEPLOYMENT_MANIFEST_PATH: |
         ./Dockerfile
-        ./main.yml
-        ./mvnw
+        ./service.yml
 jobs:
     buildImage:
         permissions:
